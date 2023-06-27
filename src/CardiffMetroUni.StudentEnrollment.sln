@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardiffMetroUni.StudentEnrollment.WebAPI", "CardiffMetroUni.StudentEnrollment.WebAPI\CardiffMetroUni.StudentEnrollment.WebAPI.csproj", "{20ECB3C5-47F3-4B32-B2D7-541F60F31252}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardiffMetroUni.StudentEnrollment.Core", "CardiffMetroUni.StudentEnrollment.Core\CardiffMetroUni.StudentEnrollment.Core.csproj", "{3B81FA6B-5DE3-4D01-A605-883C60625413}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{7F9C3AED-FA76-430E-83AE-F668FF5CCDD0}"
+	ProjectSection(SolutionItems) = preProject
+		..\scripts\add-changes.cmd = ..\scripts\add-changes.cmd
+		..\scripts\update-database.cmd = ..\scripts\update-database.cmd
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardiffMetroUni.StudentEnrollment.WebApp", "CardiffMetroUni.StudentEnrollment.WebApp\CardiffMetroUni.StudentEnrollment.WebApp.csproj", "{6CC604A3-25C6-428D-B60C-4BFE1AE34A76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardiffMetroUni.StudentEnrollment.Infrastructure", "CardiffMetroUni.StudentEnrollment.Infrastructure\CardiffMetroUni.StudentEnrollment.Infrastructure.csproj", "{863D3D50-1977-4DEF-B9A9-2F36443A3CB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardiffMetroUni.StudentEnrollment.UnitTests", "CardiffMetroUni.StudentEnrollment.UnitTests\CardiffMetroUni.StudentEnrollment.UnitTests.csproj", "{032FB2F5-EBA6-493B-BD16-23CE90A76920}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20ECB3C5-47F3-4B32-B2D7-541F60F31252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20ECB3C5-47F3-4B32-B2D7-541F60F31252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20ECB3C5-47F3-4B32-B2D7-541F60F31252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20ECB3C5-47F3-4B32-B2D7-541F60F31252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B81FA6B-5DE3-4D01-A605-883C60625413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B81FA6B-5DE3-4D01-A605-883C60625413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B81FA6B-5DE3-4D01-A605-883C60625413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B81FA6B-5DE3-4D01-A605-883C60625413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC604A3-25C6-428D-B60C-4BFE1AE34A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC604A3-25C6-428D-B60C-4BFE1AE34A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC604A3-25C6-428D-B60C-4BFE1AE34A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC604A3-25C6-428D-B60C-4BFE1AE34A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863D3D50-1977-4DEF-B9A9-2F36443A3CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863D3D50-1977-4DEF-B9A9-2F36443A3CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863D3D50-1977-4DEF-B9A9-2F36443A3CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863D3D50-1977-4DEF-B9A9-2F36443A3CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032FB2F5-EBA6-493B-BD16-23CE90A76920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032FB2F5-EBA6-493B-BD16-23CE90A76920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032FB2F5-EBA6-493B-BD16-23CE90A76920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032FB2F5-EBA6-493B-BD16-23CE90A76920}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28CCC906-ED25-4689-94C3-CA1DB1C8B85C}
+	EndGlobalSection
+EndGlobal

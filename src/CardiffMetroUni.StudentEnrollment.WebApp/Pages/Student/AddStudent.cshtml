@@ -1,0 +1,46 @@
+﻿@page
+@model CardiffMetroUni.StudentEnrollment.WebApp.Pages.Student.AddStudentModel
+
+<h1 class="display-4">Student Enrollment - Add Student</h1>
+
+
+
+@if (Model.ModelState.IsValid == false)
+{
+    <div class="alert alert-danger">
+        <h4>Validation Errors:</h4>
+        <hr />
+        <ul>
+            @foreach (var error in Model.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+
+
+<form id="addPersonForm" method="post">
+    @Html.AntiForgeryToken()
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Add Student</h5>
+                <p>Please complete the student details below and click submit:</p>
+            </div>
+            <div class="card-body">
+                <partial name="Partials/Views/StudentView" for="Student" />
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center m-t-20">
+        <button type="submit" class="btn btn-success">
+           Save
+        </button>
+        <a asp-page="/Index" class="btn btn-warning">
+            Cancel
+        </a>
+    </div>
+</form>

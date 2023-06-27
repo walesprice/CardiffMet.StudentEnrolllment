@@ -1,0 +1,67 @@
+﻿@model CardiffMetroUni.StudentEnrollment.WebApp.Pages.Partials.Model.StudentModel
+
+<input type="hidden" name="Student.StudentId" value="@Model.StudentId" id="StudentId" />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input type="text" class="form-control" id="FirstName" name="Student.FirstName" value="@Model.FirstName" @Model.IsReadOnly("")>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="MiddleName"></label>
+            <input type="text" class="form-control" id="MiddleName" name="Student.MiddleName" value="@Model.MiddleName" @Model.IsReadOnly("")>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="Surname"></label>
+            <input type="text" class="form-control" id="Surname" name="Student.Surname" value="@Model.Surname" @Model.IsReadOnly("") />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="UniversityCourse"></label>
+            <input type="text" class="form-control" id="UniversityCourse" name="Student.UniversityCourse" value="@Model.UniversityCourse" @Model.IsReadOnly("UniversityCourse")>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="WelshLanguageProficiency"></label>
+            <select class="form-control" id="WelshLanguageProficiency" asp-items="@Model.WelshLanguageProficiencyOptions()" name="Student.WelshLanguageProficiency" >
+               
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="DateOfBirth"></label>
+            <input type="date" class="form-control" id="DateOfBirth" name="Student.DateOfBirth" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")" @Model.IsReadOnly("DateOfBirth") />
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="StartDate"></label>
+            <input type="date" class="form-control" id="StartDate" name="Student.StartDate" value="@Model.StartDate.ToString("yyyy-MM-dd")" @Model.IsReadOnly("StartDate") />
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="EndDate"></label>
+            <input type="date" class="form-control" id="EndDate" name="Student.EndDate" value="@Model.EndDate.ToString("yyyy-MM-dd")" @Model.IsReadOnly("EndDate") />
+
+        </div>
+    </div>
+</div>
