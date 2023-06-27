@@ -46,7 +46,7 @@ To run the Gwent Archives website, you will need to install the following:
 
 ## Live enviroment 
 
-The specific details for releasing to a live environment very much depends on the live environment.
+This is a demo, therefore the live enviroment has not been discussed or set up.
 
 ## Testing
 
