@@ -36,6 +36,7 @@ To run the Gwent Archives website, you will need to install the following:
 ```Json
 { "WebAPI.BaseUrl": "https://localhost:7011" }
 ```
+6. Build the solution and ensure NUGET packages are restored.
 6. Load the Package Manager Console.
 7. If you are in the src folder.
 8. Run the command '..\scripts\update-database.cmd' this will generate the database.

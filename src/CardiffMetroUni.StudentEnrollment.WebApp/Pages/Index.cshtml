@@ -65,17 +65,17 @@
 
         @if (Model.Students != null && Model.Students.Count > 0)
         {
-            <div>There are <strong>@Model.Students.Count</strong> student enrollment records.</div>
+            <div>There is <strong>@Model.Students.Count</strong> student enrollment records.</div>
             <div class="table-responsive">
                 <table id="officers-table" class="table mb-0">
                     <thead>
                         <tr>
                             <th>Student Id</th>
-                            <th>Student Name</th>
-                            <th>Course</th>
-                            <th>Date of Birth</th>
+                            <th>Student Name(s)</th>
+                            <th>University Course</th>
                             <th>Start Date</th>
                             <th>End Date</th>
+                            <th>Welsh Language Proficiency </th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -87,9 +87,9 @@
                                 <td>@student.StudentId</td>
                                 <td>@student.GetFullName()</td>
                                 <td>@student.UniversityCourse</td>
-                                <td>@student.DateOfBirth.ToShortDateString()</td>
                                 <td>@student.StartDate.ToShortDateString()</td>
                                 <td>@student.EndDate.ToShortDateString()</td>
+                                <td>@student.WelshLanguageProficiency</td>
                                 <td>
                                     <a asp-page="/Student/EditStudent" asp-route-StudentId="@student.StudentId" class="btn btn-success btn-sm btn-block"><i class="fas fa-user-edit"></i> Edit </a>
 

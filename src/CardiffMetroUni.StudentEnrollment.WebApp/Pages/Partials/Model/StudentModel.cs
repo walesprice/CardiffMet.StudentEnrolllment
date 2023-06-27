@@ -88,7 +88,7 @@ namespace CardiffMetroUni.StudentEnrollment.WebApp.Pages.Partials.Model
         public Result IsStartDateEndDatesValid()
         {
             int result = DateTime.Compare(StartDate, EndDate);
-            return (result >= 0) ? Result.Failure("The Start Date is the same or after the End Date") : Result.Success();
+            return (result >= 0) ? Result.Failure("The Start Date is the same or after the End Date.") : Result.Success();
         }
 
         public Result IsDateOfBirthValid()
